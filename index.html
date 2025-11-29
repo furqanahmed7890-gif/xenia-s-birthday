@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Xenia • A Star & A Flower 💫🌸</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starry background canvas -->
+    <canvas id="star-canvas" aria-hidden="true"></canvas>
+
+    <!-- Color/glow + petal overlay -->
+    <div class="color-glow" aria-hidden="true"></div>
+    <div class="floating-petals" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <!-- Main scrollable content -->
+    <main class="page">
+
+        <!-- Section 1: Hero intro -->
+        <section class="section hero" id="hero">
+            <div class="hero-inner">
+                <div class="hero-badge">39 & Shining ✨</div>
+                <h1 class="hero-title">
+                    Happy Birthday,<br>
+                    <span class="script">Xenia</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Under a sky full of stars and a garden full of flowers,<br>
+                    there’s still only one you.
+                </p>
+
+                <button id="start-journey" class="primary-btn">
+                    Begin your little journey 🌌
+                </button>
+
+                <div class="hero-hint">
+                    Tap anywhere on the background to grow tiny stars & flowers ✨🌸
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Photo + main message -->
+        <section class="section message" id="message">
+            <div class="card">
+                <div class="card-photo">
+                    <div class="photo-aurora"></div>
+                    <img src="xenia.jpg" alt="Xenia">
+                    <div class="photo-border"></div>
+                    <div class="photo-tag">Beloved • Blessed • Bright</div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="title-script">Happy 39th Birthday, Xenia! 🎂</h2>
+                    <p class="tagline">
+                        A star in the night sky, a flower in God’s garden.
+                    </p>
+
+                    <p class="typewriter" id="typewriter-text"
+                       data-full-text="Thinking of you on your 39th birthday! Today, I just want to thank God for the beautiful person you are and ask Him to pour out His blessings upon you. May you have the best year ahead. You are the best, Xenia.">
+                    </p>
+
+                    <p class="signature">
+                        With love,<br>
+                        <span>Furqan Ahmed</span>
+                    </p>
+
+                    <div class="controls-row">
+                        <button id="music-toggle" class="music-btn">
+                            Play Music 🎵
+                        </button>
+                        <div class="music-indicator" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <p class="small-hint">
+                        When the music plays, the stars pulse with you 💚
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Constellation of compliments -->
+        <section class="section constellations" id="constellations">
+            <h2 class="section-title">Your little constellation, Xenia ✨</h2>
+            <p class="section-subtitle">
+                Tap each star to reveal a word that reminds me of you.
+            </p>
+
+            <div class="constellation-grid">
+                <button class="constellation-star" data-word="Kind">
+                    <span class="icon">★</span>
+                    <span class="word">Tap me</span>
+                </button>
+                <button class="constellation-star" data-word="Radiant">
+                    <span class="icon">★</span>
+                    <span class="word">Tap me</span>
+                </button>
+                <button class="constellation-star" data-word="Faithful">
+                    <span class="icon">★</span>
+                    <span class="word">Tap me</span>
+                </button>
+                <button class="constellation-star" data-word="Strong">
+                    <span class="icon">★</span>
+                    <span class="word">Tap me</span>
+                </button>
+                <button class="constellation-star" data-word="Gentle">
+                    <span class="icon">★</span>
+                    <span class="word">Tap me</span>
+                </button>
+                <button class="constellation-star" data-word="Inspiring">
+                    <span class="icon">★</span>
+                    <span class="word">Tap me</span>
+                </button>
+            </div>
+
+            <p class="closing-line">
+                May this year be filled with more stars in your sky and more flowers in your path. 🌌🌸
+            </p>
+        </section>
+    </main>
+
+    <!-- Audio -->
+    <audio id="bg-music" loop>
+        <source src="classical.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
